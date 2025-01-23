@@ -1,0 +1,21 @@
+<header *ngIf="isHomePage">
+  <nav>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">Home</a>
+            </li>
+          
+            <!-- Display 'Iniciar Sesión' only if not logged in -->
+            <li *ngIf="!isLogged" class="nav-item">
+              <a class="nav-link" routerLink="/login">Iniciar Sesión</a>
+            </li>
+            <!-- Show 'Cerrar sesión' only if logged in -->
+            <li *ngIf="isLogged" class="nav-item">
+              <button class="btn btn-info" (click)="cerrarSesion()">Cierre de sesión</button>
+            </li>
+          </ul>
+        </div>
+      
+  </nav>
+</header>

@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 900px;
+    margin-top: 50px;
+  }
+  
+  /* Sección del formulario */
+  h2 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulario de Inicio de Sesión y Registro */
+  form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Campos de entrada */
+  input.form-control {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Botones */
+  button.btn {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #343a40;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button.btn:hover {
+    background-color: #495057;
+  }
+  
+  /* Diseño para pantallas pequeñas */
+  @media (max-width: 767px) {
+    .col-md-6 {
+      margin-bottom: 20px;
+    }
+  }
+  

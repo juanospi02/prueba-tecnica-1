@@ -1,0 +1,39 @@
+<main class="container mt-5 bg-light p-5 rounded border border-dark">
+  <div class="row">
+    <!-- Formulario de Inicio de Sesión -->
+    <div class="col-md-6 border-end">
+      <h2 class="text-center">INICIO DE SESIÓN</h2>
+      <form [formGroup]="formularioLogin" (ngSubmit)="handleSubmit()">
+        <div class="mb-3 text-start">
+          <label for="loginEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="loginEmail" formControlName="email" />
+        </div>
+        <div class="mb-3 text-start">
+          <label for="loginPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="loginPassword" formControlName="password" />
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Iniciar Sesión</button>
+      </form>
+    </div>
+
+    <!-- Formulario de Registro -->
+    <div class="col-md-6">
+      <h2 class="text-center">REGISTRO</h2>
+      <form [formGroup]="formularioRegistro" (ngSubmit)="handleRegister()">
+        <div class="mb-3 text-start">
+          <label for="registerName" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="registerName" formControlName="name" />
+        </div>
+        <div class="mb-3 text-start">
+          <label for="registerEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="registerEmail" formControlName="email" />
+        </div>
+        <div class="mb-3 text-start">
+          <label for="registerPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="registerPassword" formControlName="password" />
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Registrarse</button>
+      </form>
+    </div>
+  </div>
+</main>
