@@ -9,7 +9,7 @@
     "dev": "nodemon server.js"
   },
   "keywords": ["backend", "express", "mongodb", "jwt", "api"],
-  "author": "Tu Nombre",
+  "author": "juan ospina",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
